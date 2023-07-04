@@ -4,6 +4,7 @@ export const TouchableContainer = styled.TouchableOpacity`
   width: 90%;
   background-color: ${({theme}) => theme.COLORS.PURPLE};
   height: 60px;
+  opacity: ${props => (props.disabled ? 0.6 : 1)};
   margin-top: 40px;
   border-radius: 4px;
   justify-content: center;

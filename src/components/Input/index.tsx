@@ -1,17 +1,26 @@
 import React from 'react';
-import {Container, Label, TextInput} from './styles';
+import {Container, ErrorMessage, Label, TextInput} from './styles';
+import {TextInputProps} from 'react-native';
 
 type InputProps = {
   label: string;
   placeholder: string;
-  secureTextEntry?: boolean;
+  errorMessage?: string | null;
 };
 
-const Input = ({label, placeholder, secureTextEntry = false}: InputProps) => {
+const Input = ({
+  label,
+  placeholder,
+  errorMessage = null,
+  ...rest
+}: InputProps & TextInputProps) => {
+  const isInvalid = !!errorMessage;
+
   return (
     <Container>
       <Label>{label}</Label>
-      <TextInput placeholder={placeholder} secureTextEntry={secureTextEntry} />
+      <TextInput isInvalid={isInvalid} {...rest} placeholder={placeholder} />
+      {isInvalid && <ErrorMessage>{errorMessage}</ErrorMessage>}
     </Container>
   );
 };

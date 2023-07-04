@@ -1,17 +1,18 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Text} from 'react-native';
+import {Container} from './styles';
 
 const Home = () => {
   return (
-    <View
+    <Container
       style={{
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#000',
+        backgroundColor: '#fff',
       }}>
-      <Text style={{color: 'white', fontSize: 32}}>Home</Text>
-    </View>
+      <Text style={{color: 'black', fontSize: 32}}>Home</Text>
+    </Container>
   );
 };
 

@@ -4,6 +4,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import {ArrowsLeftRight, ChartPieSlice, House} from 'phosphor-react-native';
 import Home from '@pages/Home';
+import theme from 'src/theme';
 
 const Tab = createBottomTabNavigator();
 
@@ -11,15 +12,26 @@ const BottomTabNavigator = () => {
   return (
     <Tab.Navigator
       screenOptions={{
-        tabBarStyle: {backgroundColor: '#000'},
-        tabBarActiveTintColor: '#fff',
+        tabBarStyle: {backgroundColor: theme.COLORS.WHITE},
+        tabBarActiveTintColor: theme.COLORS.PURPLE,
+        tabBarInactiveTintColor: theme.COLORS.BLACK,
+        tabBarLabelStyle: {
+          color: theme.COLORS.BLACK,
+          fontFamily: theme.FONT_FAMILY.BOLD,
+          fontSize: theme.FONT_SIZE[10],
+        },
         headerShown: false,
       }}>
       <Tab.Screen
         name={'Home'}
         component={Home}
         options={{
-          tabBarIcon: () => <House color="#fff" size={32} />,
+          tabBarIcon: ({focused}) => (
+            <House
+              color={focused ? theme.COLORS.PURPLE : theme.COLORS.BLACK}
+              size={24}
+            />
+          ),
         }}
       />
       <Tab.Screen
@@ -32,7 +44,12 @@ const BottomTabNavigator = () => {
           },
         }}
         options={{
-          tabBarIcon: () => <ArrowsLeftRight color="#fff" size={32} />,
+          tabBarIcon: ({focused}) => (
+            <ArrowsLeftRight
+              color={focused ? theme.COLORS.PURPLE : theme.COLORS.BLACK}
+              size={24}
+            />
+          ),
         }}
       />
       <Tab.Screen
@@ -45,7 +62,12 @@ const BottomTabNavigator = () => {
           },
         }}
         options={{
-          tabBarIcon: () => <ChartPieSlice color="#fff" size={32} />,
+          tabBarIcon: ({focused}) => (
+            <ChartPieSlice
+              color={focused ? theme.COLORS.PURPLE : theme.COLORS.BLACK}
+              size={24}
+            />
+          ),
         }}
       />
     </Tab.Navigator>
