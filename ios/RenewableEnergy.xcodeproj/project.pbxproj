@@ -12,16 +12,16 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-RenewableEnergy-RenewableEnergyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RenewableEnergy-RenewableEnergyTests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		1A0128AA8D5A410E989C92FD /* Sora-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 162ABA24AFAD4690A39F2A2B /* Sora-Bold.ttf */; };
-		5EAFD9343B824EED9D2D33CE /* Sora-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FBCA73506FA478FB5034EAA /* Sora-ExtraBold.ttf */; };
-		D0C1DA96FF81488E890DB0F8 /* Sora-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCA894FE273E428BB8A2D87F /* Sora-ExtraLight.ttf */; };
 		59B4C998CBB34DA5AF5EA50C /* Sora-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3E3F0DB35D54AF982AB1502 /* Sora-Light.ttf */; };
-		8B4D480EB6A240F4A5D8E24E /* Sora-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6210831CCC427A8DBF1C69 /* Sora-Medium.ttf */; };
-		77D17001920B493EACC04239 /* Sora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD57BED29E4C405490B23678 /* Sora-Regular.ttf */; };
+		5EAFD9343B824EED9D2D33CE /* Sora-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4FBCA73506FA478FB5034EAA /* Sora-ExtraBold.ttf */; };
 		70948A871B604D9CB85427C9 /* Sora-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C8B747731D64FF3B314356F /* Sora-SemiBold.ttf */; };
 		763987393CBF40B7B2CDB338 /* Sora-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F808A7286179455B8A24746B /* Sora-Thin.ttf */; };
+		7699B88040F8A987B510C191 /* libPods-RenewableEnergy-RenewableEnergyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RenewableEnergy-RenewableEnergyTests.a */; };
+		77D17001920B493EACC04239 /* Sora-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DD57BED29E4C405490B23678 /* Sora-Regular.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8B4D480EB6A240F4A5D8E24E /* Sora-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4C6210831CCC427A8DBF1C69 /* Sora-Medium.ttf */; };
+		D0C1DA96FF81488E890DB0F8 /* Sora-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCA894FE273E428BB8A2D87F /* Sora-ExtraLight.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,22 +44,22 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RenewableEnergy/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RenewableEnergy/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RenewableEnergy/main.m; sourceTree = "<group>"; };
+		162ABA24AFAD4690A39F2A2B /* Sora-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sora-Bold.ttf"; path = "../src/assets/fonts/Sora-Bold.ttf"; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-RenewableEnergy-RenewableEnergyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RenewableEnergy-RenewableEnergyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-RenewableEnergy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RenewableEnergy.debug.xcconfig"; path = "Target Support Files/Pods-RenewableEnergy/Pods-RenewableEnergy.debug.xcconfig"; sourceTree = "<group>"; };
+		4C6210831CCC427A8DBF1C69 /* Sora-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sora-Medium.ttf"; path = "../src/assets/fonts/Sora-Medium.ttf"; sourceTree = "<group>"; };
+		4FBCA73506FA478FB5034EAA /* Sora-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sora-ExtraBold.ttf"; path = "../src/assets/fonts/Sora-ExtraBold.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-RenewableEnergy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RenewableEnergy.release.xcconfig"; path = "Target Support Files/Pods-RenewableEnergy/Pods-RenewableEnergy.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-RenewableEnergy-RenewableEnergyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RenewableEnergy-RenewableEnergyTests.debug.xcconfig"; path = "Target Support Files/Pods-RenewableEnergy-RenewableEnergyTests/Pods-RenewableEnergy-RenewableEnergyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5C8B747731D64FF3B314356F /* Sora-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sora-SemiBold.ttf"; path = "../src/assets/fonts/Sora-SemiBold.ttf"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-RenewableEnergy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RenewableEnergy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RenewableEnergy/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-RenewableEnergy-RenewableEnergyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RenewableEnergy-RenewableEnergyTests.release.xcconfig"; path = "Target Support Files/Pods-RenewableEnergy-RenewableEnergyTests/Pods-RenewableEnergy-RenewableEnergyTests.release.xcconfig"; sourceTree = "<group>"; };
+		BCA894FE273E428BB8A2D87F /* Sora-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sora-ExtraLight.ttf"; path = "../src/assets/fonts/Sora-ExtraLight.ttf"; sourceTree = "<group>"; };
+		DD57BED29E4C405490B23678 /* Sora-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sora-Regular.ttf"; path = "../src/assets/fonts/Sora-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		162ABA24AFAD4690A39F2A2B /* Sora-Bold.ttf */ = {isa = PBXFileReference; name = "Sora-Bold.ttf"; path = "../src/assets/fonts/Sora-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4FBCA73506FA478FB5034EAA /* Sora-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Sora-ExtraBold.ttf"; path = "../src/assets/fonts/Sora-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BCA894FE273E428BB8A2D87F /* Sora-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Sora-ExtraLight.ttf"; path = "../src/assets/fonts/Sora-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F3E3F0DB35D54AF982AB1502 /* Sora-Light.ttf */ = {isa = PBXFileReference; name = "Sora-Light.ttf"; path = "../src/assets/fonts/Sora-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4C6210831CCC427A8DBF1C69 /* Sora-Medium.ttf */ = {isa = PBXFileReference; name = "Sora-Medium.ttf"; path = "../src/assets/fonts/Sora-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		DD57BED29E4C405490B23678 /* Sora-Regular.ttf */ = {isa = PBXFileReference; name = "Sora-Regular.ttf"; path = "../src/assets/fonts/Sora-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5C8B747731D64FF3B314356F /* Sora-SemiBold.ttf */ = {isa = PBXFileReference; name = "Sora-SemiBold.ttf"; path = "../src/assets/fonts/Sora-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F808A7286179455B8A24746B /* Sora-Thin.ttf */ = {isa = PBXFileReference; name = "Sora-Thin.ttf"; path = "../src/assets/fonts/Sora-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F3E3F0DB35D54AF982AB1502 /* Sora-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sora-Light.ttf"; path = "../src/assets/fonts/Sora-Light.ttf"; sourceTree = "<group>"; };
+		F808A7286179455B8A24746B /* Sora-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Sora-Thin.ttf"; path = "../src/assets/fonts/Sora-Thin.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +166,7 @@
 			sourceTree = "<group>";
 		};
 		F06957B2E3C44594914C9451 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				162ABA24AFAD4690A39F2A2B /* Sora-Bold.ttf */,
 				4FBCA73506FA478FB5034EAA /* Sora-ExtraBold.ttf */,
@@ -179,7 +179,6 @@
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -527,6 +526,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23KM8VQTBP;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = RenewableEnergy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -554,6 +554,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 23KM8VQTBP;
 				INFOPLIST_FILE = RenewableEnergy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
