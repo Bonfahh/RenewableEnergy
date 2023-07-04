@@ -10,8 +10,8 @@ const Stack = createStackNavigator();
 const createRouter = (signed = false) => {
   return !signed ? (
     <Stack.Navigator screenOptions={{header: () => null}}>
-      <Stack.Screen name="Login" component={Login} />
       <Stack.Screen name="SignUp" component={SignUp} />
+      <Stack.Screen name="Login" component={Login} />
     </Stack.Navigator>
   ) : (
     <Stack.Navigator screenOptions={{header: () => null}}>
