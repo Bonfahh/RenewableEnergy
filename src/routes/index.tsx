@@ -11,6 +11,7 @@ import SignUp from '@pages/SignUp';
 type AuthRoutes = {
   Login: undefined;
   SignUp: undefined;
+  Index: undefined;
 };
 
 export type AuthNavigatorRoutesProps = StackNavigationProp<AuthRoutes>;
@@ -24,7 +25,9 @@ const createRouter = (signed = false) => {
       <Stack.Screen name="SignUp" component={SignUp} />
     </Stack.Navigator>
   ) : (
-    <BottomTabNavigator />
+    <Stack.Navigator screenOptions={{header: () => null}}>
+      <Stack.Screen name="Index" component={BottomTabNavigator} />
+    </Stack.Navigator>
   );
 };
 

@@ -13,18 +13,28 @@ import Index from './src';
 import {NavigationContainer} from '@react-navigation/native';
 import {ThemeProvider} from 'styled-components/native';
 import theme from 'src/theme';
+import {StatusBar} from 'react-native';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
 
 function App(): JSX.Element {
   return (
-    <NavigationContainer>
-      <Provider store={store}>
-        <PersistGate persistor={persistor}>
-          <ThemeProvider theme={theme}>
-            <Index />
-          </ThemeProvider>
-        </PersistGate>
-      </Provider>
-    </NavigationContainer>
+    // eslint-disable-next-line react-native/no-inline-styles
+    <GestureHandlerRootView style={{flex: 1}}>
+      <NavigationContainer>
+        <Provider store={store}>
+          <PersistGate persistor={persistor}>
+            <ThemeProvider theme={theme}>
+              <StatusBar
+                barStyle="dark-content"
+                backgroundColor="transparent"
+                translucent
+              />
+              <Index />
+            </ThemeProvider>
+          </PersistGate>
+        </Provider>
+      </NavigationContainer>
+    </GestureHandlerRootView>
   );
 }
 

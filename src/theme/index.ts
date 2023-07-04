@@ -12,7 +12,7 @@ export default {
     16: 16,
     17: 17,
     18: 18,
-    14: 24,
+    14: 14,
     24: 24,
   },
   COLORS: {
@@ -24,6 +24,7 @@ export default {
     RED: '#EE8688',
     GREY_700: '#A0A0A0',
     GREY_500: '#CFCFCF',
+    GREY_300: '#E6E6E6',
     GREY_100: '#F4F4F4',
   },
 };

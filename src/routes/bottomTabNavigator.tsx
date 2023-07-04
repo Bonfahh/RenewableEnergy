@@ -28,6 +28,7 @@ const BottomTabNavigator = () => {
         options={{
           tabBarIcon: ({focused}) => (
             <House
+              weight="fill"
               color={focused ? theme.COLORS.PURPLE : theme.COLORS.BLACK}
               size={24}
             />
