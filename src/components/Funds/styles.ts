@@ -13,7 +13,7 @@ export const Title = styled.Text`
   margin-bottom: 20px;
 `;
 
-export const FundContainer = styled.View`
+export const FundContainer = styled.TouchableOpacity`
   width: 40%;
   margin-left: 5%;
   border-color: ${({theme}) => theme.COLORS.GREY_300};

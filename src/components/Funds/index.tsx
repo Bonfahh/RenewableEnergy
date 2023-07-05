@@ -19,8 +19,12 @@ import {
   Title,
 } from './styles';
 import {ScrollView} from 'react-native-gesture-handler';
+import {useNavigation} from '@react-navigation/native';
+import {TabNavigatorRoutesProps} from 'src/routes/bottomTabNavigator';
 
 const Funds = () => {
+  const navigation = useNavigation<TabNavigatorRoutesProps>();
+
   const fundsData = [
     {
       name: 'Wind fund',
@@ -57,7 +61,9 @@ const Funds = () => {
         contentContainerStyle={{flexGrow: 1, width: '100%'}}
         showsVerticalScrollIndicator={false}>
         {fundsData.map(item => (
-          <FundContainer key={item.name}>
+          <FundContainer
+            key={item.name}
+            onPress={() => navigation.navigate('Trade')}>
             {item.icon}
             <FundName>{item.name}</FundName>
             <Image

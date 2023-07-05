@@ -1,12 +1,24 @@
 /* eslint-disable react/no-unstable-nested-components */
 import React from 'react';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {
+  BottomTabNavigationProp,
+  createBottomTabNavigator,
+} from '@react-navigation/bottom-tabs';
 
 import {ArrowsLeftRight, ChartPieSlice, House} from 'phosphor-react-native';
 import Home from '@pages/Home';
 import theme from 'src/theme';
+import Trade from 'src/pages/Trade';
 
-const Tab = createBottomTabNavigator();
+type TabRoutes = {
+  Home: undefined;
+  Trade: undefined;
+  Portfolio: undefined;
+};
+
+export type TabNavigatorRoutesProps = BottomTabNavigationProp<TabRoutes>;
+
+const Tab = createBottomTabNavigator<TabRoutes>();
 
 const BottomTabNavigator = () => {
   return (
@@ -28,7 +40,7 @@ const BottomTabNavigator = () => {
         options={{
           tabBarIcon: ({focused}) => (
             <House
-              weight="fill"
+              weight={focused ? 'fill' : 'regular'}
               color={focused ? theme.COLORS.PURPLE : theme.COLORS.BLACK}
               size={24}
             />
@@ -36,14 +48,8 @@ const BottomTabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name={'Search'}
-        component={Home}
-        listeners={{
-          tabPress: e => {
-            // Prevent default action
-            e.preventDefault();
-          },
-        }}
+        name={'Trade'}
+        component={Trade}
         options={{
           tabBarIcon: ({focused}) => (
             <ArrowsLeftRight
@@ -54,7 +60,7 @@ const BottomTabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Activity"
+        name="Portfolio"
         component={Home}
         listeners={{
           tabPress: e => {
